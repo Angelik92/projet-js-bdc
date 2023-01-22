@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        
+        <h1>Wysiwyg</h1>
+        <i>What You See Is What You Get</i>
+        
+    </header>
+    
+    <fieldset>
+        <legend>Mon wysiwyg</legend>
+        
+        <div class= "field-container">
+            <label>Titre</label>
+            <input class="onChangeRefreshWysiwyg" type="text" id="titreWysiwyg">
+
+            <label>Couleur du titre</label>
+            <input class="onChangeRefreshWysiwyg" type="text" id="colorTitleWysiwyg">
+        </div>
+
+        <div class= "field-container">
+            <label>Source de l'image</label>
+            <input class="onChangeRefreshWysiwyg" type="text" id="imgWysiwyg">
+
+            <label>Largeur Max</label>
+            <input value="300" type="number" class="onChangeRefreshWysiwyg" id="imgMaxWidthWysiwyg">
+        </div>
+
+        <div class= "field-container">
+            <label>Contenu</label>
+            <textarea class="onChangeRefreshWysiwyg" type="text" id="contentWysiwyg"></textarea>
+        </div>
+
+        <div class= "field-container">
+            <button id="btnGenererWysiwyg">Générer</button>
+        </div>
+    </fieldset>
+
+
+        <div id="resultatWysiwyg">
+            <h2 id="titreWysiwygResultat"></h2>
+            <img src="" id="imgWysiwygResultat">
+            <p id="contentWysiwygResultat"></p>
+        </div>
+
+
+    <script src="site.js"></script>
+
+</body>
+</html>
